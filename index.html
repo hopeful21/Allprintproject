@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Percetakan</title>
+    <link rel="stylesheet" href="style.css">
+  
+<script>
+
+</script>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+           <img src="img/BackgroundEraser_20240906_100628191.png" width="150" alt="">
+          </div>
+          <div class="menu-icon" id="menu-icon">
+            <span>-</span>
+            <span>-</span>
+            <span>-</span>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            
+            <li><a href="#featuresp">Produk</a></li>
+            <li><a href="#cta">Kontak</a></li>
+            <li><a href="https://www.instagram.com/allprintprojectofficial">Instagram</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Cetak Segala Kebutuhan Anda dengan Kualitas Terbaik</h2>
+            <p>Kami menyediakan berbagai layanan percetakan dengan teknologi terkini dan hasil yang memuaskan.</p>
+            <a href="https://api.whatsapp.com/send?phone=6285695503944&text=Halo,%20saya%20ingin%20memesan%20produk%20percetakan" class="hero-button">Mulai Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Futures Section -->
+  <!-- Futures Section -->
+<!-- Futures Section -->
+<!-- Features Section -->
+<div class="featuresparagraf" id="featuresp">
+    <h2 class="section-title">Layanan Kami</h2>
+</div>
+<!-- Features Section -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/WhatsApp Image 2024-09-06 at 23.42.22.jpeg" alt="Produk Berkualitas">
+            </div>
+            <h2>Box Packaging</h2>
+            <p>Solusi terbaik untuk kemasan produk Anda. Kami menawarkan box packaging dengan desain premium dan kualitas tinggi yang menjaga produk tetap aman dan menarik.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/WhatsApp Image 2024-09-06 at 23.46.24.jpeg" alt="Cetak Cepat dan Efisien">
+            </div>
+            <h2>Calender</h2>
+            <p>Jadikan kalender Anda sebagai media promosi sepanjang tahun. Kami mencetak kalender dengan desain kreatif yang bisa disesuaikan dengan branding bisnis Anda.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/nils-schirmer-yqXygiCmft8-unsplash.jpg" alt="Desain Kreatif">
+            </div>
+            <h2>Banner</h2>
+            <p>Tingkatkan visibilitas brand Anda dengan banner berkualitas tinggi. Ideal untuk promosi acara atau bisnis, cetakan kami tahan lama dan memikat perhatian.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/WhatsApp Image 2024-09-06 at 23.46.03.jpeg" alt="Harga Terjangkau">
+            </div>
+            <h2>Buku Tahunan</h2>
+            <p>Kenangan abadi yang dikemas dalam buku tahunan berkualitas. Kami memastikan setiap momen penting diabadikan dengan desain elegan dan cetakan yang tajam.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/jeet-dhanoa-tGHkC5ntUGc-unsplash.jpg" alt="Pelayanan Terbaik">
+            </div>
+            <h2>Posters</h2>
+            <p>Promosikan acara atau produk Anda dengan poster yang mengesankan. Kami mencetak poster dengan warna yang hidup dan detail yang memikat mata.</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="img/devin-avery-46n1T0BMKUM-unsplash.jpg" alt="Pengiriman Cepat">
+            </div>
+            <h2>Box Packaging</h2>
+            <p>Kami menawarkan kemasan yang tidak hanya melindungi produk, tetapi juga memperkuat identitas brand Anda. Cocok untuk produk dengan berbagai ukuran.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container cta-content">
+            <h2>Siap untuk Proyek Anda?</h2>
+            <p>Kami siap membantu Anda mencetak dengan kualitas terbaik. <strong>Hubungi kami sekarang!</strong></p>
+            <a href="mailto:alprintprojectofficial@gmail.com" class="cta-button">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Percetakan Kami. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+    // Get the modal
+var modal = document.getElementById("imageModal");
+
+// Get the image and the modal image element
+var images = document.querySelectorAll(".feature-item img");
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+
+// Loop through all feature images to add click event
+images.forEach(function(image) {
+  image.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src; // Set the source of the modal image
+    captionText.innerHTML = this.alt; // Set the caption from the alt text
+  });
+});
+
+// Get the <span> element that closes the modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the image, close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  menuIcon.classList.toggle('open');
+});
+
+  </script>
+</body>
+</html>
